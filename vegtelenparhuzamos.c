@@ -1,5 +1,8 @@
 #include <stdbool.h>
 
+//gcc vegtelenparhuzamos.c -fopenmp -o vp 
+///(FOPENMP)
+
 int main ()
 {
 
