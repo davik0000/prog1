@@ -1,0 +1,67 @@
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xi="http://www.w3.org/2001/XInclude" version="5.0" xml:lang="hu">
+    <info>
+        <title>Helló, Gutenberg!</title>
+        <keywordset>
+            <keyword/>
+        </keywordset>
+    </info>
+    <section>
+        <title>Juhász István: Magas szintű programozási nyelvek 1</title>
+        
+        	<para>
+            A számítógépek programozására kialakult nyelvnek 3 fajtáját külöböztetjük meg: gépi nyelv, assembly szintű nyelv, magas szintű nyelv. Jelenleg magas szintű nyelvel foglalkozunk mint amilyen a c is.Minden nyelvnek megvan a saját nyelvi szabályrendszere. Ezek folyamatosan fejlődnek az igényeknek megfelelően.
+            A programban található nyelvi elemek az alábbi részekből állnak össze: -lexikális egységek, -szintaktikai egységek, -utasitások, -programegységek, -forditási egységek, -program. A kifejezések szintaktikai eszközök . Feladatuk hogy a program egy adott pontján már ismert értékekből új értékeket kapjunk meg. Két összetevője van : -érték, -típus. Egy kifejezés formálisan 3 összetevőből áll: -operandus, -operátor, -kerek zárójelek. Van egyoperandusú művelet illetve kétoperandusú vagy háromoperandusú művelet attól függően hogy hány db operandussal végezzük a műveletet. A kifejezéseknek három alakja lehet : -prefix, -infix, -postfix. Az utasitások segitségével adjuk meg az algoritmusok egyes lépéseit, illetve a forditoprogramunk ezzel generálja a tárgyprogramot. Két csoport létezik : -deklarációs, -végrehajtható. Értékadó utasítás : Segítségével beállíthatjuk vagy módosíthatjuk egy változónak értékét a program futásának bármelyik pillanatában. Ugró utasítás : GOTO címke.
+            Elágaztató utasítások : if else. Többirányú elágaztató utasítások : case. Ciklusszervező utasítások : for, while    ciklus általános felépítése : fej, mag, vég . Az ismétlésre vonatkozó információk a fejben vagy a végben szerepelnek. A mag tartalmazza a végrehajtandó parancsokat.
+        </para>
+        
+
+
+    </section>
+    <section>
+        <title>Kernigan-Ritchie: A C programozási nyelv</title>
+        
+            
+        <para>
+        	Az itt található programrészletek a Kernigan-Ritchie: A C programozási nyelv című könyvből vannak kiemelve.
+            A szabványps könyvtárban találhatunk olyan függvényeket amellyel képesek vagyunk egyszerre egy karaktert irni vagy olvasni. getchar() minden hivásakor beolvas egy karaktert és a karakter lesz a visszatérési értéke. A putchar() fg. valamilyen kimenetre kiir egy karaktert.
+
+           <programlisting><![CDATA[
+
+           	/* A bemenet átmásolása a kimenetre. 1. változat*/ 
+           	main() 
+           	{
+           	int c ;
+           	c = getchar();
+           	while (c != EOF) 
+           	{putchar(c);
+           	c = getchar();
+           	}
+           	 }
+           	]]></programlisting>
+           
+           	
+           		Használat előtt a változóinkat deklarálnunk kell, enélkül hibát fogunk kapni. A deklaráció meghatároz egy típust, amit a változó neve követ. Ha a deklarációnál értéket is adunk meg akkor onnastól kezdve inicializálásról beszélünk. A kifejezések utasítássá válnak abban az esetben ha pontosvessző követi őket. A c nyelvben a pontosvessző utasitáslezáró jel azaz terminátor
+           	</para>
+        
+    </section>
+    <section>
+        <title>Benedek-Levendovszky: Szoftverfejlesztés C++ nyelven</title>
+    
+       
+    <para>
+    		A c++ objektumorientált nyelv. Jelenleg is a legmodernebb nyelvek közé tartozik, széles körben elterjedt. Találkozhatun egy új tipussal a bool -al, mely felveheti a true illetve a flase értékeket. A c++ nyelvben akkor a legjobb változót deklarálni amikor egyből fel is használjuk. C++ -ban lehetőség nyílik a függvények túltelhelésére. Azonos nevű de különböző argumentumlistájú függvényeket is létretudunk hozni. A visszatérési értékük nem térhetnek el. Az argumentumlistához alapértelmezett értékrkrt is rendelhetünk. Megjelenik a referencia, dereferencia . Kialakult az Objektumorientáltság ami ahatalmas szabadságot és átláthatóságot ad a programozók kezébe. A valós világ dolgainak tulajdonságai alapján a dolgokat osztályokba tudják zárni. Ezeknek a dolgoknak osztályon belül meg lehet adni a tulajdonságaikat illetve a funkcióikat. Ezzel megvalósitható az effektiv adatrejtés is : private, public, protected.Ahányszor példányosítunk osztályt annyiszor foglalunk helyet a tagjainak. Adatrejtésre azért van szükségünk, hogy ne érjék el közvetlenül a tagváltozóinkat az osztályban és azzal illegális értékeket állítsanak be neki. Ahoz hogy elrejtsünk valamit elég csupán a private kulcsszót elé tennünk.A classok tagjai alapértelmezetten privátok míg a structoknak publikusakalapértelmezetten a tagjaik. A konstruktorok lehetőség adnak arra, hogy az osztályok inicializálódni tudjanak
+            létrejöttükkor. Ezeknek azonosítója megegyezik az osztály nevével.C++ sablonok arra használatosak, hogy osztályok és függvények
+            deklarációjakor néhány adatelemnek felparaméterezzük a típusát ezáltal
+            létrehozva egy dinamikus dolgot.
+
+
+
+
+
+        </para>
+    
+    </section>
+    
+
+</chapter>
+
